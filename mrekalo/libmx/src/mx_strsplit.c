@@ -5,7 +5,7 @@ char **mx_strsplit(char const *s, char c){
     if(s==NULL) return NULL;
     int cw = mx_count_words(s,c);
     int i=0, k=0;
-    char **res = (char**)malloc(8 * cw);
+    char **res = (char**)malloc(16 * cw);
     int letters = 0;
     int start =0;
     while(s[i]!='\0'){
